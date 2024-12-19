@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2></h2>
+    <form action="rezerwacja.php">
+        <h2>Formulaż rezerwacji</h2><br>
+        <label for="name">Imię:</label> <input type="text" name="name" id="name" required maxlength="15"><br>
+        <label for="surname">Nazwisko:</label> <input type="text" name="surname" id="surname" required maxlength="15"><br>
+        <label for="tel">Nr telefonu:</label> <input type="tel" name="tel" id="tel" required maxlength="9"><br>
+        <label for="email">E-mail:</label> <input type="email" name="email" id="email" required  maxlength="45"><br><br>
+
+        <label for="car-type">Typ samochodu:</label>
+        <select name="car-type" id="car-type" required>
+            <option value="">Wybierz rodzaj samochodu</option>
+
+            <optgroup label="Limuzyny">
+                <option value="mercedes1">Mercedes Klasa S długa</option>
+                <option value="mercedes2">Mercedes Klasa S</option>
+                <option value="mercedes3">EQE Limuzyna</option>
+            </optgroup>
+
+            <optgroup label="Suv-y">
+                <option value="suv1">Mercedes</option>
+                <option value="suv2">BMW</option>
+                <option value="suv3">Hyundai</option>
+            </optgroup>
+
+            <optgroup label="Sportowe">
+                <option value="lambo">Lamborghini</option>
+                <option value="porshe">Porsche</option>
+                <option value="mercedes">Mercedes AMG GT</option>
+            </optgroup>
+        </select> <br>
+
+        <label for="pickup-date">Data wypożyczenia:</label> <input type="date" name="pickup-date" id="pickup-date" required><br>
+
+        <label for="return-date">Data zwrotu:</label> <input type="date" name="return-date" id="return-date" required><br>
+         <input type="submit" value="Zarezerwuj">
+
+         
+    </form>
+</body>
+</html>
